@@ -1,0 +1,50 @@
+# Flutter / Dart
+.dart_tool/
+.packages
+.pub-cache/
+.pub/
+build/
+*.lock
+!pubspec.lock
+.flutter-plugins
+.flutter-plugins-dependencies
+coverage/
+
+# Android
+android/.gradle/
+android/local.properties
+android/key.properties
+android/app/*.jks
+android/app/*.keystore
+*.aab
+*.apk
+
+# iOS
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Flutter.framework
+ios/Flutter/Generated.xcconfig
+ios/Flutter/flutter_export_environment.sh
+*.ipa
+*.mobileprovision
+*.p12
+*.p8
+*.cer
+
+# Never commit credentials or user data
+.env
+.env.*
+secrets/
+*.pem
+*.key
+*.sqlite
+*.db
+exports/
+wear-study-data/
+
+# OS and editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
