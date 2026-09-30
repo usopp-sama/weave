@@ -1,10 +1,10 @@
-# Telltale
+# Weave
 
-The phone app for the **[Whisper](https://github.com/usopp-sama/Whisper)** band, by **Vivica**.
+The phone app for the **[Thread](https://github.com/usopp-sama/thread)** band, by **Vivica**.
 
-Whisper wears the sensors and says nothing. Telltale is the part that tells you everything it saw — sleep, resting pulse, load, recovery, calories, skin temperature — and tells nobody else.
+Thread wears the sensors and says nothing. Weave is the part that tells you everything it saw — sleep, resting pulse, load, recovery, calories, skin temperature — and tells nobody else.
 
-> *Whisper keeps its mouth shut. Telltale doesn't.*
+> *Thread senses. Weave makes sense.*
 
 ## Status
 
@@ -12,7 +12,7 @@ Design freeze **v0.1** — documentation only. No Flutter project committed yet.
 
 ## Not a medical device
 
-Telltale shows wellness estimates from optical and motion sensors. It is not a medical device and does not diagnose, treat, or prevent disease. Scores are compared against your own recent baseline, never a clinical threshold.
+Weave shows wellness estimates from optical and motion sensors. It is not a medical device and does not diagnose, treat, or prevent disease. Scores are compared against your own recent baseline, never a clinical threshold.
 
 ## Planned stack
 
@@ -25,7 +25,7 @@ Telltale shows wellness estimates from optical and motion sensors. It is not a m
 | Inference | pure Dart rules and statistics for v1; optional TFLite assets later |
 | Cloud | none |
 
-Bundle identifier sketch: `com.vivica.telltale`.
+Bundle identifier sketch: `com.vivica.weave`.
 
 ## Architecture rules
 
@@ -39,13 +39,13 @@ Bundle identifier sketch: `com.vivica.telltale`.
 
 | Doc | Settles |
 |---|---|
-| [05-mobile-app-architecture](docs/05-mobile-app-architecture.md) | Modules, sync, screens, permissions, local data protection |
-| [07-app-information-processing](docs/07-app-information-processing.md) | Ingest, baselines, processing graph, recompute policy |
-| [08-user-insights-catalog](docs/08-user-insights-catalog.md) | Every insight, cadence, confidence gate, v1 vs later |
-| [09-algorithms-and-inference](docs/09-algorithms-and-inference.md) | Heart rate variability, sleep staging, calories, scoring |
-| [contract/10-data-model-and-ble](docs/contract/10-data-model-and-ble.md) | Frame formats and GATT services (mirror) |
+| [05-mobile-app-architecture](https://github.com/usopp-sama/thread/blob/main/docs/05-mobile-app-architecture.md) | Modules, sync, screens, permissions, local data protection |
+| [07-app-information-processing](https://github.com/usopp-sama/thread/blob/main/docs/07-app-information-processing.md) | Ingest, baselines, processing graph, recompute policy |
+| [08-user-insights-catalog](https://github.com/usopp-sama/thread/blob/main/docs/08-user-insights-catalog.md) | Every insight, cadence, confidence gate, v1 vs later |
+| [09-algorithms-and-inference](https://github.com/usopp-sama/thread/blob/main/docs/09-algorithms-and-inference.md) | Heart rate variability, sleep staging, calories, scoring |
+| [10-data-model-and-ble](https://github.com/usopp-sama/thread/blob/main/docs/10-data-model-and-ble.md) | Frame formats and GATT services |
 
-The charter, BLE contract, privacy rules, and roadmap live in the [Whisper](https://github.com/usopp-sama/Whisper) repository. Files under `docs/contract/` are mirrors — edit them there.
+The design documents, charter, BLE contract, privacy rules, and roadmap live in the [Thread](https://github.com/usopp-sama/thread) repository. The links above point to that source of truth; this repository does not yet contain the planned app-facing mirrors.
 
 ## Insight vocabulary
 
@@ -63,7 +63,7 @@ Deliberately absent: SpO2, ECG, blood pressure, atrial fibrillation detection, i
 
 ## Privacy
 
-All biometrics stay on the phone. No account, no analytics, no background upload. Export is explicit. Telltale will never grow a fleet view for employers.
+All biometrics stay on the phone. No account, no analytics, no background upload. Export is explicit. Weave will never grow a fleet view for employers.
 
 ## License
 
